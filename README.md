@@ -62,9 +62,6 @@ There is a brief description of queries processing. There are comments in the qu
 #### Programs description
 The programs for executing queries have names `queryN.py` where `N` is the number of a query. After a query execution there will be `N.csv` file created with the query result (csv table).
 
-#### Program requirements
-`Python3` and `pandas`, `pymongo`, `scipy` packages should be installed.
-
 #### Comments on the performance of the queries
 Although MongoDB provides very powerful aggregation framework, the `$lookup` (join) operation might be not so effective as in RDMBS because collections in MongoDB are supposed to be designed to avoid the needs of joins. The execution time for queries is given in the table below. No indices except the default ones (on `_id`) were used.
 
